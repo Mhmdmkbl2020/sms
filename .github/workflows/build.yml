@@ -24,7 +24,7 @@ jobs:
           pyinstaller --onefile --noconsole --name SMSGateway --add-data "config.json;." sms_gateway.py
           
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # التصحيح هنا
         with:
           name: SMSGateway
           path: dist/SMSGateway.exe
